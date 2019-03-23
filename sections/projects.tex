@@ -1,0 +1,180 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Projects}
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+	\cventry
+	{Discrete Variational Autoencoders and Stochastic Block Models}
+	{}
+	{Fall 2018 (Ongoing)}
+	{Prof. Piyush Rai}
+	{Undergraduate Project}
+	{
+		\begin{cvitems}
+		\item Surveyed continuous relaxations to discrete latent variables such as Gumbel-Softmax, Spike-and-Exp, Overlapping, Gumbolt, etc.
+		\item Implemented GumBolt relaxation for binary latent variables with RBM prior using tensorflow and performed analysis on MNIST dataset
+		\item Augmented GVAEs with binary latent embeddings to offer interpretable latent representations, imitating mixed membership models
+		\item Tested the resultant model for link prediction on graph datasets such as Citeseer and Cora and achieved superior results to baseline models
+		\end{cvitems}
+	}
+
+%---------------------------------------------------------
+	\cventry
+	{Mixture of Experts using Discrete VAE}
+	{}
+	{Fall 2018}
+	{Prof. Arnab Bhattacharya}
+	{CS685: Data Mining}
+	{
+		\begin{cvitems}
+		\item Proposed a novel model using the VAE framework for clustering in latent space, extending the ideas of the VaDE model
+		\item Modeled the cluster assignment using a deep neural network, and added regularization using Virtual Adversarial training
+		\item The proposed model worked comparable to VaDE on clustering tasks without the need for careful layer wise pretraining
+		\item Extended the proposed model as a gating function for Mixture of Experts tasks and achieved better performance than naive baseline models
+		\end{cvitems}
+	}
+
+%---------------------------------------------------------
+	\cventry
+	{CatTalks: A Centralized Video + Text Chat Tool}
+	{}
+	{Fall 2018}
+	{Prof. Dheeraj Sanghi}
+	{CS425: Computer Networks}
+	{
+		\begin{cvitems}
+		\item Developed a web-app for text and video chat using Flask and socket programming on python
+		\item Login credentials, requests and messages were stored using MongoDB
+		\end{cvitems}
+	}
+
+%---------------------------------------------------------
+	\cventry
+	{Incremental Neural Networks Training}
+	{}
+	{Spring 2018}
+	{Prof. Purushottam Kar}
+	{CS777: Statistical and Algorithmic Learning Theory}
+	{
+		\begin{cvitems}
+		\item Two layer NNs can be represented as an ensemble of multiple single node hidden layer networks, which can be individually trained using generic boosting methods (gradient boosting), which also afford definite theoretical convergence guarantees
+		\item Applied gradient boosting to train two layer networks incrementally and studied the convergence analysis under various constraints
+		\item Implemented incremental NN training in python using sklearn, and applied for Softmax Regression on the MNIST Dataset
+		\item Applied incremental training as pre-training, along with backpropagation for fine-tuning and observed remarkably better convergence
+		\end{cvitems}
+	}
+
+%---------------------------------------------------------
+	\cventry
+	{Survey on Methods For Convex Optimization}
+	{}
+	{Spring 2018}
+	{Prof. Purushottam Kar}
+	{CS777: Statistical and Algorithmic Learning Theory}
+	{
+		\begin{cvitems}
+		\item Surveyed prominent Gradient Descent based techniques (SGD, AdaGrad, etc.) for optimization and perused the convergence bounds of each
+		\item Reviewed and paraphrased a paper which disproves guaranteed convergence of Adam for even convex objectives using a counterexample
+		\item Identified inconsistencies within the convergence proof for Adam as an attempt to explain its incorrectness
+		\end{cvitems}
+	}
+
+%---------------------------------------------------------
+	\cventry
+	{Clustering and MoE for Arbitrary Shaped Clusters}
+	{}
+	{Spring 2018}
+	{Prof. Piyush Rai}
+	{CS698X: Bayesian Modelling and Inference}
+	{
+		\begin{cvitems}
+		\item Studied VAEs and surveyed clustering models (iWMM, SVAE, VaDE, etc.) for data existing in non-Gaussian shaped clusters
+		\item Implemented Variational Deep Embeddings (VaDE) in Tensorflow to experiment on MNIST and spiral dataset to learn arbitrary shaped clusters
+		\item Proposed gating functions based on VaDE and Stick Breaking-VAE for mixture of experts models
+		\end{cvitems}
+	}
+
+%---------------------------------------------------------
+	\cventry
+	{Java to X86 Assembly Compiler}
+	{}
+	{Spring 2018}
+	{Prof. Subhajit Roy}
+	{CS335: Compiler Design}
+	{
+		\begin{cvitems}
+		\item Developed an end-to-end compiler in node.js for a subset of Java language to compile into x86 Assembly using jison (for parsing)
+		\item Implemented advanced features such as classes and type casting, along with support for floats. Adjudged one of the best projects
+		\end{cvitems}
+	}
+
+%---------------------------------------------------------
+	\cventry
+	{Machine Comprehension using Match-LSTM}
+	{}
+	{Spring 2018}
+	{Prof. Harish Karnick}
+	{CS671: Natural Language Processing}
+	{
+		\begin{cvitems}
+		\item Surveyed various models for Machine Comprehension (FastQA, R-Net, Match-LSTM, etc.) and implemented Match-LSTM using Tensorflow
+		\item Experimented with SQuAD and combated inefficiency of Match-LSTM to apply separate attention mechanisms for different question types
+		\item Additionally, introduced simple changes to loss function to improve the EM score on SQuAD by a total of over 5\%
+		\end{cvitems}
+	}
+
+%---------------------------------------------------------
+	\cventry
+	{Scaling Recommendation Systems using K-Means Clustering}
+	{}
+	{Fall 2017}
+	{Prof. Purushottam Kar}
+	{CS771: Introduction to Machine Learning}
+	{
+		\begin{cvitems}
+		\item Used K-Means clustering to divide users into cliques, and applied Collaborative Filtering independently within each clique
+		\item Clustered songs based on MFCC features using K-Means and quantified user features based on song clusters from the user’s learning history
+		\item Applied the model on MSD. Also proposed simple exploration strategy based on song clusters to allow variations in suggestions provided
+		\end{cvitems}
+	}
+
+%---------------------------------------------------------
+	\cventry
+	{NachOS Operating System}
+	{}
+	{Fall 2017}
+	{Prof. Mainak Chaudhuri}
+	{CS330: Operating Systems}
+	{
+		\begin{cvitems}
+		\item Implemented basic operating system functions (Fork, Join, etc.) on a truncated NachOS code (provided) in C++ programming language
+		\item Implemented and evaluated performance of algorithms for various scheduling processes and various page replacement strategies
+		\item Implemented Shared Memory Allocation, Demand Paging and various Page Replacement Algorithms
+		\end{cvitems}
+	}
+
+%---------------------------------------------------------
+	\cventry
+	{Smart Image Advertising}
+	{}
+	{Fall 2016}
+	{}
+	{Google DevFest}
+	{
+		\begin{cvitems}
+		\item Developed a web-app for smart advertising using image analysis with basic controls
+		\item Wrote a back-end program to detect objects in an image on upload using an API service from Clarifai
+		\item Stored objects as tags in database and used these to search through products on different e-commerce websites using their affiliate APIs
+		\end{cvitems}
+	}
+
+%---------------------------------------------------------
+\end{cventries}
+
+\cvcomment{* Code and reports for all projects are available at \underline{\href{https://www.github.com}{https://github.com/fat-fighter}}}
