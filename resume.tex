@@ -1,7 +1,7 @@
 \documentclass[11pt, a4paper]{resume}
 
 \name{Gurpreet}{Singh}
-\position{B. Tech{\enskip\cdotp\enskip}Department of Computer Science and Engineering}
+\position{Master of Science{\enskip\cdotp\enskip}Computer Science{\enskip\cdotp\enskip}Columbia University}
 
 \mobile{(+91) 9005528086}
 \email{guggu@iitk.ac.in}
@@ -20,13 +20,19 @@
   {Gurpreet Singh \ $\cdot$ \ Résumé}
   {\thepage}
 
-\input{sections/education.tex}
-\input{sections/achievements.tex}
-\input{sections/experience.tex}
-\input{sections/projects.tex}
-\input{sections/other-projects.tex}
-\input{sections/skills.tex}
+\setlength\columnsep{7mm}
+
+\begin{multicols}{2}
+	\input{sections/education.tex}
+	\input{sections/achievements.tex}
+	\input{sections/experience.tex}
+	\input{sections/por.tex}
+	\input{sections/projects.tex}
+	\input{sections/skills.tex}
+\end{multicols}
+
+\vspace{-0.7cm}
+
 \input{sections/coursework.tex}
-\input{sections/por.tex}
 
 \end{document}
