@@ -8,15 +8,42 @@
 %-------------------------------------------------------------------------------
 
 \cventry
+	{Google}
+	{Software Engineer 3}
+    {Sunnyvale, CA}
+	{Jan 2022 --- Present}
+	{%
+		\begin{cvitems}
+            \item Working on building express data infrastructure offering with the Napa team for internal Google clients.
+            \item Presently leading the GA launch of date partitioned tables, which involved improving the insert latency by 20x and stabilizing the existing architecture.
+            \item Designed and implemented scalability fixes to improve write latency by eliminating contention in our metadata servers, requriing detailed investigation into underlying dependencies.
+            \item Led a multi-quarter migration effort of inactive tables off a deprecated system by building a shadow infrastructure and seemlessly migrating millions of tables with no external user impact.
+            \item Greatly contributed to production stability, especially by mentoring many folks and onboarding them to standard production principles, effectively reducing the daily toil for the team's oncall rotations.
+		\end{cvitems}
+	}
+
+\cventry
 	{Nutanix}
+	{MTS II - Machine Learning Engineer}
+    {San Jose, CA (Remote)}
+	{Mar 2021 --- Jan 2022}
+	{%
+		\begin{cvitems}
+            \item Designed and planned AWS infrastructure for distributed processing of events in file servers based on SQS, Batch, and Lambdas
+            \item Laid out the foundation for ML-based service offerings in public cloud and drove the development of models for anomaly detection
+		\end{cvitems}
+	}
+
+\cventry
+    {}
 	{Machine Learning Engineering Intern}
-    {San Jose, CA}
+    {}
 	{May 2020 --- Aug 2020}
 	{%
 		\begin{cvitems}
             \item The objective was to implement robust Machine Learning models for anomaly detection in operations performed on large file servers
-            \item Built a variant of the Holt-Winters Model for temporal based anomaly detection on per hour operation counts
-            \item Implemented and used Collaborative Filtering for learning user behaviour using peer comparison for file access patterns
+            \item Built a variant of the Holt-Winters Model for temporal based anomaly detection on per hour operation counts with adaptive thresholding
+            \item Implemented and used Collaborative Filtering for detection by learning user behavior using peer comparison for file access patterns
 		\end{cvitems}
 	}
 	
@@ -27,23 +54,19 @@
 	{May 2018 --- Jul 2018}
 	{%
 		\begin{cvitems}
-			\item Built a lite calculator for customer margin allocation for proper internalization based on a waterfall logic, taking various parameters into consideration and a greedy strategy to allocate margin per stock, improving the run time of the allocation logic by tenfolds
-			\item Introduced changes in existing models for asset liability gap management identifying bugs in pre-existing code and augmenting features for proper AL Gap Management for deposits and clearing house initial margin
+            \item Built a greedy strategy for customer margin allocation, providing an alternative to the existing logic with 97\% runtime improvement
+            \item Introduced changes in existing models for asset-liability (AL) gap management identifying bugs in pre-existing code and augmenting features for proper AL gap management for deposits and clearinghouse initial margin
 		\end{cvitems}
 	}
 
-%-------------------------------------------------------------------------------
 \cventry
-	{Inmobi}
-	{Data Science Intern}
-	{Bangalore, India}
-	{May 2017 --- Jul 2017}
-	{%
-		\begin{cvitems}
-			\item Extracted image features from Ad creative images using OpenCV (in python) and Google Cloud Vision API to explain ad CTR
-			\item Analysed Pearson Correlation, performed regression tests, and used variable selection (Weka) to detect explainable features 
-			\item Created a python server to handle feature extraction and prediction for building suggestions for possible Ad enhancements based on CTR
-		\end{cvitems}
-	}
-
-%-------------------------------------------------------------------------------
+    {Inmobi}
+    {Data Science Intern}
+    {Bangalore, India}
+    {May 2017 --- Jul 2017}
+    {%
+        \begin{cvitems}
+            \item Extracted image features from Ad creative images using OpenCV (in python) and Google Cloud Vision API to explain ad CTR
+            \item Analyzed correlations, performed regression tests, and used variable selection using Weka to detect explainable features
+        \end{cvitems}
+    }
